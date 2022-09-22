@@ -1,0 +1,43 @@
+
+
+
+train_multigpu:
+  # the index of selected gpus (The number of gpus must be bigger than or equal to 2)
+  gpu_index: "0,1"
+  # the sequence for training
+  seq_for_training: ["07"]        #["03","04","05","06","07","08","09","10"]
+  # the sequence for validation
+  seq_for_validateion: ["07"]        #["03","04","05","06","07","08","09","10"]
+  # weight saved floder
+  weight_saved_floder: "./tmp/experiment1"
+  # initial learning rate and the decay rate of our learning rate
+  lr: 0.0001
+  decay_rate: 0.93
+  epoch: 100
+  batchsize: 64
+
+
+train_singlegpu:
+  # the index of selected gpu (The number of gpus must be 1)
+  gpu_index: "0"
+  # the sequence for training
+  seq_for_training: ["07"]        #["03","04","05","06","07","08","09","10"]
+  # the sequence for validation
+  seq_for_validateion: ["07"]        #["03","04","05","06","07","08","09","10"]
+  # weight saved floder
+  weight_saved_floder: "./tmp/experiment2"
+  # initial learning rate and the decay rate of our learning rate
+  lr: 0.0001
+  decay_rate: 0.93
+  epoch: 100
+  batchsize: 32
+
+
+test:
+  # the index of selected gpu
+  gpu_index: "0,1"    #"0,1"
+  seq_for_test: "07"      #"00"
+  floder: "./tmp/"
+  batchsize: 512
+  #weight load path
+  load_path: "tmp/experiment2/weight_all.pth" #"tmp/experiment1/weight_mutiGPU_all.pth"
