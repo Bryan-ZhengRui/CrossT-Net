@@ -1,7 +1,3 @@
-# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
-"""
-TransT FeatureFusionNetwork class.
-"""
 import copy
 from typing import Optional
 import torch.nn.functional as F
