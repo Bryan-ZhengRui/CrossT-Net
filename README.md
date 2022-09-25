@@ -22,7 +22,7 @@ The KITTI07 sequence we have here is the preprocessed data and can be directly u
  
 ![无标题](https://user-images.githubusercontent.com/96043999/192137765-17fa58c6-391b-4139-9c41-f85ec5991975.png)
 
-The attention module in the module borrows from [TransT](https://github.com/PeizeSun/TransTrack) and changed in some regions.
+The attention module in the module borrows from [TransT](https://github.com/chenxin-dlut/TransT) and changed in some regions.
 
 If you want to train the dataset on a **single GPU**, you just need to write this command in the root directory:
 
