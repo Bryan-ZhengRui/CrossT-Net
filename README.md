@@ -16,13 +16,13 @@ pip install -r requirements.txt
 
 ### 1.How to train the dataset： 
 
-Our proposed method uses three inputs (depth map, intensity map, normal map), which requires spherical projection processing of raw point clouds of the lidar. You could utilize [OverlapNet](https://github.com/PRBonn/OverlapNet) 's Demo1 to obtain these 2D images. 
+Our proposed method uses three inputs (depth map, intensity map, normal map), which requires spherical projection processing of raw point clouds of the lidar. You could utilize **[OverlapNet](https://github.com/PRBonn/OverlapNet) 's** Demo1 to obtain these 2D images. 
 
 The KITTI07 sequence we have here is the preprocessed data and can be directly used to input the network. Below is a visualization of a frame in the sequence07
  
 ![无标题](https://user-images.githubusercontent.com/96043999/192137765-17fa58c6-391b-4139-9c41-f85ec5991975.png)
 
-The attention module in the module borrows from [TransT](https://github.com/chenxin-dlut/TransT) and changed in some regions.
+The attention module in the module borrows from **[TransT](https://github.com/chenxin-dlut/TransT)** and changed in some regions.
 
 If you want to train the dataset on a **single GPU**, you just need to write this command in the root directory:
 
