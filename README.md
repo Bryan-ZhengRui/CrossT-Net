@@ -12,7 +12,7 @@ In order to train on a whole dataset, you need at least one gpu.
   
 ``` pip install -r requirements.txt ```
 
-### How to train the dataset： 
+### 1.How to train the dataset： 
 
 Our proposed method uses three inputs (depth map, intensity map, normal map), which requires spherical projection processing of raw point clouds of the lidar. You could utilize [OverlapNet](https://github.com/PRBonn/OverlapNet) 's Demo1 to obtain these 2D images. 
 
@@ -29,3 +29,16 @@ If you want to train the dataset on a **single GPU**, you just need to write thi
 Or If you want to train the dataset on **multiple GPUs**, you first have to configure the GPU index and number in the [config file](https://github.com/Bryan-ZhengRui/CrossT-Net/blob/main/config/configfile.yaml), and then:
 
 ``` python main_multi_gpu.py ```
+
+### 2.How to test the dataset： 
+
+Configure the parameters in the [config file](https://github.com/Bryan-ZhengRui/CrossT-Net/blob/main/config/configfile.yaml), and then:
+
+``` python test.py ```
+
+And after test, you will get an error distribution plot and predict.txt, which can be used for later P-R curve drawing.
+
+# License
+
+CrossT-Net is released under MIT License.
+
