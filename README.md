@@ -10,7 +10,9 @@ In order to train on a whole dataset, you need at least one gpu.
 
 * First, you'd better be able to install the main packages we need:
   
-``` pip install -r requirements.txt ```
+```
+pip install -r requirements.txt 
+```
 
 ### 1.How to train the dataset： 
 
@@ -24,17 +26,23 @@ The attention module in the module borrows from [TransT](https://github.com/Peiz
 
 If you want to train the dataset on a **single GPU**, you just need to write this command in the root directory:
 
-``` python main_single_gpu.py ```
+``` 
+python main_single_gpu.py
+```
 
 Or If you want to train the dataset on **multiple GPUs**, you first have to configure the GPU index and number in the [config file](https://github.com/Bryan-ZhengRui/CrossT-Net/blob/main/config/configfile.yaml), and then:
 
-``` python main_multi_gpu.py ```
+```
+python main_multi_gpu.py 
+```
 
 ### 2.How to test the dataset： 
 
 Configure the parameters in the [config file](https://github.com/Bryan-ZhengRui/CrossT-Net/blob/main/config/configfile.yaml), and then:
 
-``` python test.py ```
+``` 
+python test.py
+```
 
 And after test, you will get an error distribution plot and predict.txt, which can be used for later P-R curve drawing.
 
