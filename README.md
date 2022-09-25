@@ -18,4 +18,4 @@ Our proposed method uses three inputs (depth map, intensity map, normal map), wh
 
 The KITTI07 sequence we have here is the preprocessed data and can be directly used to input the network. Below is a visualization of a frame in the sequence07
  
-![2d_maps](https://user-images.githubusercontent.com/96043999/192137282-5c8c88ea-5577-4aff-89be-1f950edc6ab7.png,width="200",height="200")
+![2d_maps](https://user-images.githubusercontent.com/96043999/192137282-5c8c88ea-5577-4aff-89be-1f950edc6ab7.png)
