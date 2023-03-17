@@ -1,4 +1,4 @@
-# CrossT-Net：Cross Transformer for Efficient Lidar-Based Loop Closure Detection（Our paper is being submitted to RAL）
+# CrossT-Net：Cross Transformer for Lidar-Based Loop Closure Detection
 ![image](https://user-images.githubusercontent.com/96043999/192136749-8d6608dd-4bc2-4689-bb2f-ecb775a2c2c2.png)
 
 
